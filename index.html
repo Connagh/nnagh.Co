@@ -1,118 +1,267 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio Website</title>
+  <title>Connagh's Portfolio</title>
   <!--<link rel="stylesheet" href="style.css">-->
   <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </head>
+
 <body>
-  <nav class="navbar">
-      <div class="max-width">
-        <div class="logo"><a href="#">Portfo<span>lio.</span></a></div>
-        <ul class="menu">
-          <li><a href="#"></a>Home</li>
-          <li><a href="#"></a>About</li>
-          <li><a href="#"></a>Services</li>
-          <li><a href="#"></a>Skills</li>
-          <li><a href="#"></a>Teams</li>
-          <li><a href="#"></a>Contact</li>
-        </ul>
-      </div>
-  </nav>
+  <img class="logo" src="assets/connagh_logo.png" alt="Connagh Logo" width="500px" height="auto">
+
+  <div class="tagbar" >
+    <div class="center" id="myTagContainer">
+        <button class="tag active" onclick="filterSelection('all')"> Show All</button>
+        <button class="tag" onclick="filterSelection('R&D')"> Research & Development (R&D)</button>
+        <button class="tag" onclick="filterSelection('AR')"> Augmented Reality (AR)</button>
+        <button class="tag" onclick="filterSelection('Prototyping')"> Prototyping</button>
+        <button class="tag" onclick="filterSelection('HCI')"> Human-Computer Interaction (HCI)</button>
+        <button class="tag" onclick="filterSelection('UX')"> User Experience (UX)</button>
+        <button class="tag" onclick="filterSelection('VR')"> Virtual Reality (VR)</button>
+    </div>
+  </div>
+
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column R&D, column AR">
+    <div class="content">
+      <img class="project_thumbnail" src="assets/ar_ereader.jpg" alt="Mountains" style="width:100%">
+      <h4>Super Kindle AR e-reader</h4>
+      <p>R&D, AR</p>
+    </div>
+  </div>
+
+  <div class="column Prototyping">
+    <div class="content">
+      <img class="project_thumbnail" src="assets/flatmate.jpg" alt="Lights" style="width:100%">
+      <h4>FlateMate App Design</h4>
+      <p>Prototyping</p>
+    </div>
+  </div>
+  <div class="column Prototyping">
+    <div class="content">
+      <img class="project_thumbnail" src="assets/taptick.jpg" alt="Nature" style="width:100%">
+      <h4>TapTick App Design</h4>
+      <p>Prototyping</p>
+    </div>
+  </div>
+
+  <div class="column HCI, column UX, column AR">
+    <div class="content">
+      <img class="project_thumbnail" src="assets/real_life_subtitles.jpg" alt="Car" style="width:100%">
+      <h4>Real Life Subtitles</h4>
+      <p>HCI, UX, AR</p>
+    </div>
+  </div>
+
+  <div class="column VR">
+    <div class="content">
+      <img class="project_thumbnail" src="assets/vr_smart_car.jpg" alt="Car" style="width:100%">
+      <h4>VR Smart Car Simulator</h4>
+      <p>VR</p>
+    </div>
+  </div>
+
+  <div class="column R&D">
+    <div class="content">
+      <img class="project_thumbnail" src="assets/cleverpets_logo.jpg" alt="Car" style="width:100%">
+      <h4>CleverPetsUK</h4>
+      <p>R&D</p>
+    </div>
+  </div>
+
+  <div class="column R&D">
+    <div class="content">
+      <img class="project_thumbnail" src="assets/smart_hamster_wheel.jpg" alt="Car" style="width:100%">
+      <h4>Hamster Smart Wheel</h4>
+      <p>R&D</p>
+    </div>
+  </div>
+
+
+<!-- END GRID -->
+</div>
+
 </body>
+
 </html>
 
+<script>
+  // Gallery with tag filters
+  filterSelection("all") // Execute the function and show all columns
+  function filterSelection(c) {
+    var x, i;
+    x = document.getElementsByClassName("column");
+    if (c == "all") c = "";
+    // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+    for (i = 0; i < x.length; i++) {
+      w3RemoveClass(x[i], "show");
+      if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+    }
+  }
+
+  // Show filtered elements
+  function w3AddClass(element, name) {
+    var i, arr1, arr2;
+    arr1 = element.className.split(" ");
+    arr2 = name.split(" ");
+    for (i = 0; i < arr2.length; i++) {
+      if (arr1.indexOf(arr2[i]) == -1) {
+        element.className += " " + arr2[i];
+      }
+    }
+  }
+
+  // Hide elements that are not selected
+  function w3RemoveClass(element, name) {
+    var i, arr1, arr2;
+    arr1 = element.className.split(" ");
+    arr2 = name.split(" ");
+    for (i = 0; i < arr2.length; i++) {
+      while (arr1.indexOf(arr2[i]) > -1) {
+        arr1.splice(arr1.indexOf(arr2[i]), 1); 
+      }
+    }
+    element.className = arr1.join(" ");
+  }
+
+  // Add active class to the current button (highlight it)
+  var tagContainer = document.getElementById("myTagContainer");
+  var tags = tagContainer.getElementsByClassName("tag");
+  for (var i = 0; i < tags.length; i++) {
+    tags[i].addEventListener("click", function(){
+      var current = document.getElementsByClassName("active");
+      current[0].className = current[0].className.replace(" active", "");
+      this.className += " active";
+    });
+  }
+</script>
+
 <style>
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+html {
+  overflow-y: scroll; /* Removes content reposition when scrollbar appears */
+}
 
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  text-decoration: none; 
 }
 
-.max-width{
-  max-width: 1300px;
-  padding: 0 80px;
+body {
+  background-image: url('assets/background.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding: 20px;
+  font-family: Roboto;
+}
+
+/* Center website */
+.main {
+  max-width: 1000px;
   margin: auto;
 }
 
-
-/* navbar styling */
-.navbar{
-  position: fixed;
-  width: 100%;
-  background: crimson;
-  font-family: 'Roboto', sans-serif;
+h1 {
+  font-size: 50px;
+  word-break: break-all;
 }
 
-.navbar .max-width{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+.project_thumbnail {
+  border-radius: 10px;
+  padding-bottom: 5px;
 }
 
-.navbar .logo a{
-  color: white;
-  font-size: 35px;
-  font-weight: 600px;
-}
-
-.navbar .menu li{
- list-style: none;
- display: inline-block;
- color: white;
-}
-
-.navbar .menu li a{
-  color: white;
-}
-</style>
-
-
-
-
-
-
-<!--
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Connagh's Portfolio</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="">
-  </head>
-
-  <body style="background-color:rgb(27, 27, 27);">
-      <img src="assets/connagh_em_all.png" alt="Logo that reads 'Connagh'" width="40%" height="40%" class="img_center">
-      <p class="text">
-        <a class="hyperlink" href="https://nnagh.Co">nnagh.Co</a>
-      is currently under progress</p>
-      <p class="text"> Please check back later.</p>
-    <script src="" async defer></script>
-  </body>
-</html>  
-
-<style>
-.img_center {
+.logo {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  text-align: center;
+  padding: 0px;
+}
+
+.tagbar {
   padding-top: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
-.text {
- text-align: center;
- color: white;
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
-.hyperlink {
- color: #ffcb05;
+
+.row {
+  margin: 8px -16px;
+  max-width: 800px;
+  margin:auto
 }
-</style>
-*/
--->
+
+/* Add padding BETWEEN each column (if you want) */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  display: none; /* Hide columns by default */
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  border-radius: 20px;  /* Rounded edges */
+  background-color: white;
+  padding: 10px;
+  box-shadow: 5px 8px 10px #969696;
+}
+
+.content:hover{
+  background-color: rgb(235, 235, 235);
+  box-shadow: 0px 0px 0px;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.tag {
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  background-color: white;
+  cursor: pointer;
+  padding: 5px;
+  font-weight: 700;
+}
+
+/* Add a grey background color on mouse-over */
+.tag:hover {
+  background-color: #ddd;
+}
+
+/* Add a dark background color to the active button */
+.tag.active {
+  background-color: #666;
+   color: white;
+}
