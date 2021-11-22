@@ -3,10 +3,8 @@
 
 <head>
   <meta charset="UTF-8">
-  <!--<meta http-equiv="X-UA-Compatible" content="IE=edge">-->
   <title>Connagh's Portfolio</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!--<link rel="stylesheet" type="text/css" media="screen" href="main.css" />-->
+  <!--<link rel="stylesheet" href="style.css">-->
   <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </head>
 
@@ -200,33 +198,21 @@ html {
   overflow-y: scroll; /* Removes content reposition when scrollbar appears */
 }
 
-* {
+*{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body, html {
-  height: 100%;
-}
-
-
-
-body { 
-  background-color: #89D6FF;
-  background-repeat: repeat-x;
+body {
   background-image: url('assets/background.jpg');
-  background-position: center bottom;
+  background-color: #89D6FF;
+  /*background: linear-gradient(#89D6FF, #8DCB80);*/
+  background-repeat: no-repeat;
   background-attachment: fixed;
+  background-position: center bottom;
   background-size: auto;
   font-family: Roboto;
-}
-
-/* Turn off parallax scrolling for all tablets and phones. Increase/decrease the pixels if needed */
-@media only screen and (max-device-width: 1366px) {
-  .body {
-    background-attachment: scroll;
-  }
 }
 
 /* Center website */
