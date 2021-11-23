@@ -127,6 +127,8 @@ p {
   text-align: center;
   padding: 0px;
   padding-top: 20px;
+  width: 100%;
+  max-width: 40%;
 }
 
 .tagbar {
@@ -216,4 +218,9 @@ p {
 .tag.active {
   background-color: #666;
   color: white;
+}
+
+.project_details {
+  inline-size: 0px; /* Allows the thumbnail details to compress, allowing the gallery on mobile to display correctly */
+  word-wrap: break-word;
 }
