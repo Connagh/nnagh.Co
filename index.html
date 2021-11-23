@@ -31,6 +31,12 @@
     });
   </script>
 
+<!-- Alternative appraoch (DOM)
+  <script>
+    $("document").ready($(".loader-wrapper").fadeOut("slow"));
+    $("document").ready($("body").removeClass("hide_the_body"));
+  </script> -->
+
   <!-- Logo -->
   <img class="logo" src="assets/connagh_logo_animated.gif" alt="Connagh Logo" width="500px" height="auto">
 
@@ -44,7 +50,6 @@
         <button class="tag" onclick="filterSelection('Engineering')"> Engineering</button>
     </div>
   </div>
-
 
 <!-- Portfolio Gallery Grid -->
 <div class="row">
@@ -242,7 +247,7 @@ body {
 }
 
 .hide_the_body{
-  display: none;
+  overflow: hidden;
 }
 
 .loader-wrapper {
