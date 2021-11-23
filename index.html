@@ -16,20 +16,19 @@
     <span class="loader"><span class="loader-inner"></span></span>
   </div>
 
-  <!-- Close loading animation -->
+  <!-- Close loading animation, show body -->
   <script>
-    $("document").ready($(".loader-wrapper").fadeOut("slow"));
-    $("document").ready($("body").removeClass("hide_the_body"));
-  </script>
-
-  <!-- Previous closer
-    <script>
     $(window).on("load",function(){
       $("body").removeClass("hide_the_body");
       $(".loader-wrapper").fadeOut("slow");
     });
   </script>
-  -->
+
+<!-- Alternative appraoch (DOM)
+  <script>
+    $("document").ready($(".loader-wrapper").fadeOut("slow"));
+    $("document").ready($("body").removeClass("hide_the_body"));
+  </script> -->
 
   <!-- Logo -->
   <img class="logo" src="assets/connagh_logo_animated.gif" alt="Connagh Logo" width="500px" height="auto">
