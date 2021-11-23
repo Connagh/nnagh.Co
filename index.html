@@ -18,6 +18,12 @@
     <span class="loader"><span class="loader-inner"></span></span>
   </div>
 
+  <!-- Close loading animation -->
+  <script>
+    $(window).on("load",function(){
+      $(".loader-wrapper").fadeOut("slow");
+    });
+  </script>
 
   <!-- Logo -->
   <img class="logo" src="assets/connagh_logo_animated.gif" alt="Connagh Logo" width="500px" height="auto">
@@ -149,13 +155,6 @@
 </body>
 
 </html>
-
-<!-- Close loading animation -->
-<script>
-  $(window).on("load",function(){
-    $(".loader-wrapper").fadeOut("slow");
-  });
-</script>
 
 <!-- Gallery filters -->
 <script>
