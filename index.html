@@ -9,9 +9,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
-
-
-<body>
+<body class="hide_the_body">
 
   <!-- Loading animation -->
   <div class="loader-wrapper">
@@ -20,10 +18,18 @@
 
   <!-- Close loading animation -->
   <script>
+    $("document").ready($(".loader-wrapper").fadeOut("slow"));
+    $("document").ready($("body").removeClass("hide_the_body"));
+  </script> -->
+
+  <!-- Previous closer
+    <script>
     $(window).on("load",function(){
+      $("body").removeClass("hide_the_body");
       $(".loader-wrapper").fadeOut("slow");
     });
   </script>
+  -->
 
   <!-- Logo -->
   <img class="logo" src="assets/connagh_logo_animated.gif" alt="Connagh Logo" width="500px" height="auto">
@@ -225,7 +231,7 @@ html {
 body {
   background-image: url('assets/background.jpg');
   background-color: #89D6FF;
-  /*background: linear-gradient(#89D6FF, #8DCB80);*/
+  /* background: linear-gradient(#89D6FF, #8DCB80); */
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center bottom;
@@ -234,10 +240,15 @@ body {
   height: 100%;
 }
 
+.hide_the_body{
+  overflow: hidden;
+}
+
 .loader-wrapper {
   width: 100%;
   height: 100%;
-  position: absolute;
+  position: fixed;
+  z-index: 1000;
   top: 0;
   left: 0;
   background-color: #90d4fc;
