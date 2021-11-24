@@ -12,7 +12,7 @@ html {
 }
 
 body {
-  background-image: url("assets/background.jpg");
+  /* background-image: url("assets/background.jpg"); */
   background-color: #89d6ff;
   background-attachment: fixed;
   background-position: center bottom;
@@ -26,22 +26,28 @@ body {
   margin: auto;
 }
 
-h4 {
-  padding-bottom: 0px;
-  font-size: large;
-  /* text-align: center; */
-  white-space: nowrap;
-}
-
-p {
-  font-size: medium;
-  /* text-align: center; */
-  white-space: nowrap;
-}
-
 .project_thumbnail {
   border-radius: 10px; /* Rounded edges */
   width: 100%;
+}
+
+.project_title {
+  font-size: 10px;
+  font-size: 2vmin; /* Scalable font size */
+  padding-bottom: 0px;
+  font-weight: 700;
+}
+
+.project_tags {
+  font-size: 6px;
+  font-size: 1vmin; /* Scalable font size */
+}
+
+.project_details {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  display: block;
+  overflow: hidden;
 }
 
 .logo {
@@ -53,6 +59,8 @@ p {
   padding-top: 20px;
   width: 100%;
   max-width: 400px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 /*
@@ -74,6 +82,18 @@ p {
   padding-bottom: 10px;
 }
 
+/* Style the buttons */
+.tag {
+  font-size: 2vmin; /* Scalable font size */
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  background-color: rgb(255, 255, 255);
+  cursor: pointer;
+  padding: 5px;
+  font-weight: 700;
+}
+
 .row {
   margin: 0px 0px;
   max-width: 1000px;
@@ -83,7 +103,7 @@ p {
 /* Gallery column padding */
 .row,
 .row > .column {
-  padding: 6px;
+  padding: 3px;
 }
 
 /* Create three equal columns */
@@ -104,7 +124,7 @@ p {
 .content {
   border-radius: 10px; /* Rounded edges */
   background-color: white;
-  padding: 10px;
+  padding: 3%;
   box-shadow: 5px 8px 10px #969696;
 }
 
@@ -122,18 +142,6 @@ p {
   display: block;
 }
 
-/* Style the buttons */
-.tag {
-  border-radius: 10px;
-  border: none;
-  outline: none;
-  background-color: rgb(255, 255, 255);
-  cursor: pointer;
-  padding: 5px;
-  font-weight: 700;
-  font-size: large;
-}
-
 /* Add a grey background color on mouse-over */
 .tag:hover {
   background-color: #ddd;
@@ -145,9 +153,7 @@ p {
   color: white;
 }
 
-.project_details {
-  inline-size: 0px; /* Allows the thumbnail details to compress, allowing the gallery on mobile to display correctly */
-}
+*/
 
 /*
 ██       ██████   █████  ██████  ███████ ██████  
