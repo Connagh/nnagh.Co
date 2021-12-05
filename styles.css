@@ -244,7 +244,8 @@ body {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
+  padding-top: 8%; /* Location of the box */
+
   left: 0;
   top: 0;
   width: 100%; /* Full width */
@@ -252,6 +253,7 @@ body {
   overflow: auto; /* Enable scroll if needed */
   background-color: rgb(0, 0, 0); /* Fallback color */
   background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+  justify-content: center;
 }
 
 /* Modal Content */
@@ -263,7 +265,9 @@ body {
   padding-left: 20px;
   padding-right: 15px;
   border: 1px solid #888;
-  width: 80%;
+  width: 90%;
+  max-width: 900px;
+  border-radius: 10px; /* Rounded edges */
 }
 
 /* The Close Button */
@@ -301,8 +305,4 @@ body {
   padding-bottom: 30px;
   padding-left: 5%;
   padding-right: 5%;
-}
-
-.centre_model_project_paragraph {
-  width: 80%;
 }
