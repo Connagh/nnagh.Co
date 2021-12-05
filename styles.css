@@ -13,7 +13,7 @@ html {
 
 body {
   /* background-image: url("assets/background.jpg"); */
-  background-color: #89d6ff;
+  background-color: #1c1c1c;
   background-attachment: fixed;
   background-position: center bottom;
   background-size: auto;
@@ -50,6 +50,23 @@ body {
   overflow: hidden;
 }
 
+.text_logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding: 0px;
+  padding-top: 20px;
+  width: 100%;
+  max-width: 400px;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 400px;
+  height: auto;
+  src: url("assets/fonts/arty.otf") format("opentype");
+  font-family: arty;
+}
+
 .logo {
   display: block;
   margin-left: auto;
@@ -61,6 +78,8 @@ body {
   max-width: 400px;
   padding-left: 20px;
   padding-right: 20px;
+  width: 400px;
+  height: auto;
 }
 
 /*
@@ -123,7 +142,7 @@ body {
 /* Content */
 .content {
   border-radius: 10px; /* Rounded edges */
-  background-color: white;
+  background-color: #fff;
   padding: 3%;
   box-shadow: 5px 8px 10px #969696;
 }
@@ -172,7 +191,7 @@ body {
   z-index: 1000;
   top: 0;
   left: 0;
-  background-color: #90d4fc;
+  background-color: #1c1c1c;
   display: flex;
   justify-content: center;
   align-items: center;
