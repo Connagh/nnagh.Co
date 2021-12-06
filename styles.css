@@ -50,21 +50,6 @@ body {
   overflow: hidden;
 }
 
-.text_logo {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  padding: 0px;
-  padding-top: 20px;
-  width: 100%;
-  max-width: 400px;
-  padding-left: 20px;
-  padding-right: 20px;
-  width: 400px;
-  height: auto;
-}
-
 .logo {
   display: block;
   margin-left: auto;
@@ -76,7 +61,7 @@ body {
   padding-right: 40px;
   width: 100%;
   max-width: 400px;
-  padding-left: 20px;
+  padding-left: 40px;
   padding-right: 40px;
   width: 400px;
   height: auto;
