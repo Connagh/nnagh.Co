@@ -260,6 +260,10 @@ body {
   justify-content: center;
 }
 
+.modal_project_picture {
+  max-width: 100%;
+}
+
 /* Modal Content */
 .modal-content {
   background-color: #fefefe;
