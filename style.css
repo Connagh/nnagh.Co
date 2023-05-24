@@ -40,6 +40,10 @@ body {
   }
 }
 
+.modal-text h2, .modal-text p {
+  font-size: 30px;  /* Or whatever size you prefer */
+}
+
 .project {
   width: 100%;
   padding-bottom: 150%;
