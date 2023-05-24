@@ -7,7 +7,7 @@ let projects = [
   },
   {
     title: 'DS Lite / 3DS',
-    description: 'I love Design Systems. These are my personal ones',
+    description: 'Design systems are like lego sets for designing stuff. I think theyre super cool and these are my personal ones',
     image: 'assets/ds.jpg',
   },
   {
@@ -27,12 +27,12 @@ let projects = [
   },
   {
     title: 'WiFi-Hacking Game Boy',
-    description: 'I put a pwnagotchi inside a gameboy case and it looks really heckin cool I hope you like it as much as I do',
+    description: 'I put a nerd toy inside a gameboy case and it looks really heckin cool I hope you like it as much as I do',
     image: 'assets/gameboy.jpg',
   },
   {
     title: 'Real Life Subtitles',
-    description: 'I collaborated with 20 hard-of-hearing participants over 6 months to produce the best "Real Life Subtitles" design. I havent produced them (yet), just produced guidelines on how to make them the absolute best, then published this for free to the world',
+    description: 'I collaborated with 20 hard-of-hearing participants over 6 months to produce the best "Real Life Subtitles" design. I reckon I could build this in a year or two 😍',
     image: 'assets/rls.jpg',
   },
   {
@@ -42,7 +42,7 @@ let projects = [
   },
   {
     title: 'Smart Car Simulator VR',
-    description: 'I cant think of how to make this exciting but it SOUNDS cool',
+    description: 'I cant think of how to describe this excitingly but the title sounds COOL',
     image: 'assets/carsim.jpg',
   },
   {
