@@ -1,7 +1,7 @@
 body {
   font-family: 'Roboto', sans-serif;
   padding: 0 2%; /* Increased padding */
-)
+}
 
 @media screen and (max-width: 480px) { 
   body{
