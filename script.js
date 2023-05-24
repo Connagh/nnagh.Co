@@ -7,7 +7,7 @@ let projects = [
   },
   {
     title: 'DS Lite / 3DS',
-    description: 'Design systems are like.. lego sets for designing stuff. I think theyre brill so I made some! 🎉',
+    description: 'Design systems are like.. lego sets for designing stuff. I think theyre brill so I made my own! 🎉',
     image: 'assets/ds.jpg',
   },
   {
