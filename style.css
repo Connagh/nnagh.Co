@@ -1,11 +1,11 @@
 body {
   font-family: 'Roboto', sans-serif;
-  padding: 0 5%; /* Increased padding */
+  padding: 0 2%; /* Increased padding */
 }
 
 #project-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(50%, 1fr)); /* Changed to 50% */
+  grid-template-columns: repeat(auto-fill, minmax(47%, 1fr)); /* Changed to 50% */
   grid-gap: 10px;
   justify-items: center;
 }
@@ -16,27 +16,27 @@ body {
     padding: 0 2%; /* Increased padding */
   }
   #project-grid {
-    grid-template-columns: repeat(auto-fill, minmax(50%, 1fr)); /* Changed to 50% */
+    grid-template-columns: repeat(auto-fill, minmax(47%, 1fr)); /* Changed to 50% */
   }
 }
 
 @media screen and (max-width: 768px) { 
   body{
     font-size: 28px;
-    padding: 0 5%; /* Increased padding */
+    padding: 0 2%; /* Increased padding */
   }
   #project-grid {
-    grid-template-columns: repeat(auto-fill, minmax(50%, 1fr)); /* Changed to 50% */
+    grid-template-columns: repeat(auto-fill, minmax(47%, 1fr)); /* Changed to 50% */
   }
 }
 
 @media screen and (min-width: 1024px) { 
   body{
     font-size: 24px;
-    padding: 0 10%; /* Increased padding */
+    padding: 0 2%; /* Increased padding */
   }
   #project-grid {
-    grid-template-columns: repeat(auto-fill, minmax(50%, 1fr)); /* Changed to 50% */
+    grid-template-columns: repeat(auto-fill, minmax(47%, 1fr)); /* Changed to 50% */
   }
 }
 
