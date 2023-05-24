@@ -27,7 +27,7 @@ let projects = [
   },
   {
     title: 'WiFi-Hacking Game Boy',
-    description: 'I put a nerd toy inside a gameboy case and it looks really heckin cool I hope you like it as much as I do',
+    description: 'I put a nerd toy inside a gameboy case and it looks really heckin cool I hope you like it as much as I do. Unrelated I know the text on my this site is really small on mobile and I will fix it asap, and also closing the pop-ups is kinda awkward. Ive found if you just start scrolling that works best 🙂',
     image: 'assets/gameboy.jpg',
   },
   {
