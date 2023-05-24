@@ -1,14 +1,7 @@
 body {
   font-family: 'Roboto', sans-serif;
   padding: 0 2%; /* Increased padding */
-}
-
-#project-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(47%, 1fr)); /* Changed to 50% */
-  grid-gap: 10px;
-  justify-items: center;
-}
+)
 
 @media screen and (max-width: 480px) { 
   body{
