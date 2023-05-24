@@ -7,42 +7,42 @@ let projects = [
   },
   {
     title: 'DS Lite / 3DS',
-    description: 'Through my professional work I fell in love with Design Systems. These are my personal Design Systems which will feature the cutting edge of my Figma passion and creativity. Developed using a two-sizes-fits-all approach, for both single and multi-brand needs, this aims to be the end-all for designs systems. With features such as: Design Tokens with Semantic layer for Dark/Light modes, easy-to-use "explain like im five" documentation, and more. I cant promise you the world on the stick, because this is more like two worlds on two sticks.',
+    description: 'I love Design Systems. These are my personal ones',
     image: 'assets/ds.jpg',
   },
   {
     title: 'Pokémon Card Builder',
-    description: 'This is a description for Project 1.',
+    description: 'A fully customisable Pokémon card template. Gotta customise em all!',
     image: 'assets/pokecard.jpg',
   },
   {
     title: 'Sneaker Builder: Air Force 1',
-    description: 'This is a description for Project 2.',
+    description: 'This template allows you to design your own Air Force 1s. Please share your designs with me I get very excited',
     image: 'assets/nikeair.jpg',
   },
   {
     title: 'Not Another Wireframe Kit',
-    description: 'This is a description for Project 3.',
+    description: 'This helps people produce design stuff with minimal effort. This one is special because its hand-drawn and that makes it looks pretty',
     image: 'assets/wireframe.jpg',
   },
   {
     title: 'WiFi-Hacking Game Boy',
-    description: 'This is a description for Project 4.',
+    description: 'I put a pwnagotchi inside a gameboy case and it looks really heckin cool I hope you like it as much as I do',
     image: 'assets/gameboy.jpg',
   },
   {
     title: 'Real Life Subtitles',
-    description: 'This is a description for Project 5.',
+    description: 'I collaborated with 20 hard-of-hearing participants over 6 months to produce the best "Real Life Subtitles" design. I havent produced them (yet), just produced guidelines on how to make them the absolute best, then published this for free to the world',
     image: 'assets/rls.jpg',
   },
   {
     title: 'Super Kindle (AR e-Reader)',
-    description: 'This is a description for Project 6.',
+    description: 'A working prototype for if you could have unlimited books in one, that you read using smart glasses',
     image: 'assets/ereader.jpg',
   },
   {
     title: 'Smart Car Simulator VR',
-    description: 'This is a description for Project 7.',
+    description: 'I cant think of how to make this exciting but it SOUNDS cool',
     image: 'assets/carsim.jpg',
   },
   {
