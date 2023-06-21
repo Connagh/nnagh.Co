@@ -1,34 +1,58 @@
-/* Grid settings for gallery */
+/* Grid settings for gallery - setting padding of all column classes */
 .col-12, .col-sm-12, .col-md-6, .col-lg-4, .col-xl-3, .col-xxl-2 {
-    padding: 15px;
+    padding: 10px;
 }
 
 /* Card settings */
 .card {
-    position: relative;
-    width: 100%;
-    padding-top: 177.78%; /* For 9:16 aspect ratio */
-    transform-style: preserve-3d;
-    perspective: 1000px;
-    transition: transform 0.5s;
+    position: relative; /* Element positioned relative to its normal position */
+    width: 100%; /* Full width */
+    padding-top: 147.5%; /* For 9:16 aspect ratio */
+    perspective: 1000px; /* Perspective property defines how far the object is away from the user */
+    border: none !important; /* Removing default borders */
 }
 
-.card .card-img {
-    position: absolute;
+/* Styles for card image container */
+.card .card-img-container {
+    position: absolute; /* Positioned at the top left corner of the card */
     top: 0;
     left: 0;
-    height: 100%;
-    width: 100%;
-    backface-visibility: hidden;
-    border-radius: 15px;
-    object-fit: cover
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    transform-style: preserve-3d; /* Let's the card exist in a 3D space */
+    transition: transform 0.5s; /* Smooth transform transition over 0.5s */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);  /* ADDED THIS LINE FOR DROP SHADOW */
 }
 
+/* Styles for the card image */
+.card .card-img {
+    position: absolute; /* Positioned at the top left corner of the container */
+    top: 0;
+    left: 0;
+    height: 100%; /* Full height */
+    width: 100%; /* Full width */
+   
+    object-fit: cover; /* The image should be sized to maintain its aspect ratio while filling the card’s entire content box */
+}
+
+/* Styles specific to front and back images */
+.card .card-img-front {
+    backface-visibility: hidden; /* Hide the back of the front image */
+}
 .card .card-img-back {
-    transform: rotateY(180deg);
+    transform: rotateY(180deg); /* Rotate the back image 180 degrees around the Y-axis */
+    backface-visibility: hidden; /* Hide the back of the back image */
 }
 
-.card:hover {
-    /* Change the cursor to a hand pointer when hovering over the card */
+/* Changes the cursor to a hand pointer when hovering over the card */
+.card-img:hover {
     cursor: pointer;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2); /* Increase drop shadow on hover */
+}
+
+body {
+    background-color: #fff !important;
+}
+.card {
+    background-color: #fff !important;
 }
